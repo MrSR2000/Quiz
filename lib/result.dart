@@ -8,10 +8,10 @@ class Result extends StatelessWidget {
 
   String get resultPhrase {
     var resultText = 'You did it!';
-    if (resultScore >= 8) {
-      resultText = 'You passed. Your score is $resultScore';
+    if (resultScore >= 5) {
+      resultText = 'You passed. Your score is $resultScore out of 11';
     } else {
-      resultText = 'You failed. Your score is $resultScore';
+      resultText = 'You failed. Your score is $resultScore out of 11';
     }
     return resultText;
   }
