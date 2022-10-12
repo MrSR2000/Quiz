@@ -159,9 +159,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('my app'),
+          title: const Text(
+            'C++ Quiz',
+          ),
+          backgroundColor: Colors.black,
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
